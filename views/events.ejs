@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>All Events | Eventify</title>
+    <link rel="stylesheet" href="/home.css">
+</head>
+<body>
+
+    <header class="site-header">
+        <nav class="navbar">
+            <a href="/" class="navbar-brand">EVENTIFY</a>
+            <ul class="navbar-links">
+                <li><a href="/userauth/home">Home</a></li>
+                <li><a href="/about">About</a></li>
+                <li><a href="/events">Events</a></li>
+                <li><a href="#contact-section">Contact</a></li>
+            </ul>
+            <div class="navbar-auth">
+                <a href="/userauth/logout" class="btn btn-logout">Logout</a>
+            </div>
+        </nav>
+    </header>
+
+    <main class="events-page-main">
+        <div class="container">
+            <section class="page-header">
+                <h1>Explore All Events</h1>
+                <p>Find concerts, workshops, comedy shows, and more happening near you.</p>
+            </section>
+
+            <section class="filter-controls">
+                <form class="filter-form">
+                    <input type="search" name="search" placeholder="Search by event or artist...">
+                    <select name="category">
+                        <option value="">All Categories</option>
+                        <option value="music">Music</option>
+                        <option value="comedy">Comedy</option>
+                        <option value="workshop">Workshop</option>
+                        <option value="rap">Rap</option>
+                    </select>
+                    <select name="location">
+                        <option value="">All Locations</option>
+                        <option value="calicut">Calicut</option>
+                        <option value="kochi">Kochi</option>
+                        <option value="trivandrum">Trivandrum</option>
+                    </select>
+                    <button type="submit" class="btn btn-primary">Apply Filters</button>
+                </form>
+            </section>
+
+            <section class="all-events-section">
+                <div class="event-grid">
+                    <article class="event-card">
+                        <img class="event-image" src="https://i.postimg.cc/cHJkzytM/980f00218731369-Y3-Jvc-Cwy-Nj-Q5-LDIw-Nz-Is-Mj-E2-LDI3-NQ.jpg" alt="Event Poster">
+                        <div class="event-details">
+                            <h3 class="card-title">Vedan Live</h3>
+                            <p class="card-location">30 Aug, Calicut Beach</p>
+                            <p class="card-price">₹1000-2000</p>
+                            <a href="/eventsDetails" class="btn btn-secondary">View details</a>
+                        </div>
+                    </article>
+                    <article class="event-card">
+                        <img class="event-image" src="https://i.postimg.cc/Gpd5kscf/6df1cf195641779-Y3-Jvc-Cwx-MDgw-LDg0-NCww-LDEx-Nw.jpg" alt="Event Poster">
+                        <div class="event-details">
+                            <h3 class="card-title">Dabzee Show</h3>
+                            <p class="card-location">15 Sep, Marine Drive, Kochi</p>
+                            <p class="card-price">₹1200-2500</p>
+                            <a href="/eventsDetails" class="btn btn-secondary">View details</a>
+                        </div>
+                    </article>
+                    <article class="event-card">
+                        <img class="event-image" src="https://i.postimg.cc/9fbN1F0Q/a1c2a3227326623-Y3-Jvc-Cwx-MDgw-LDg0-NCww-LDIx.jpg" alt="Event Poster">
+                        <div class="event-details">
+                            <h3 class="card-title">Indie Music Fest</h3>
+                            <p class="card-location">25 Oct, Manaveeyam Veedhi</p>
+                            <p class="card-price">₹500-1000</p>
+                            <a href="/eventsDetails" class="btn btn-secondary">View details</a>
+                        </div>
+                    </article>
+                    <article class="event-card">
+                         <img class="event-image" src="https://i.postimg.cc/fRggzzjc/0b7bf7191170983-65c6834d3508b.jpg" alt="Event Poster">
+                        <div class="event-details">
+                            <h3 class="card-title">Comedy Night</h3>
+                            <p class="card-location">05 Nov, Tagore Hall, Calicut</p>
+                            <p class="card-price">₹499</p>
+                            <a href="/eventsDetails" class="btn btn-secondary">View details</a>
+                        </div>
+                    </article>
+                    <article class="event-card">
+                         <img class="event-image" src="https://i.postimg.cc/W4FYtBXQ/13e763227665327-Y3-Jvc-Cwx-Njky-LDEz-Mj-Ms-MCw0-Mj-M.png" alt="Event Poster">
+                        <div class="event-details">
+                            <h3 class="card-title">Photography Workshop</h3>
+                            <p class="card-location">10 Nov, Online Event</p>
+                            <p class="card-price">₹750</p>
+                            <a href="/eventsDetails" class="btn btn-secondary">View details</a>
+                        </div>
+                    </article>
+                    <article class="event-card">
+                         <img class="event-image" src="https://i.postimg.cc/3J1cqCkb/d898ff212387065-Y3-Jvc-Cwx-Mzgw-LDEw-ODAs-Mjcw-LDA.png" alt="Event Poster">
+                        <div class="event-details">
+                            <h3 class="card-title">Rap Battle</h3>
+                            <p class="card-location">20 Dec, Freedom Square</p>
+                            <p class="card-price">Free Entry</p>
+                            <a href="/eventsDetails" class="btn btn-secondary">View details</a>
+                        </div>
+                    </article>
+                </div>
+            </section>
+
+            <section class="pagination">
+                <a href="#">&laquo; Previous</a>
+                <a href="#" class="active">1</a>
+                <a href="#">2</a>
+                <a href="#">3</a>
+                <a href="#">Next &raquo;</a>
+            </section>
+        </div>
+    </main>
+
+    <footer id="contact-section" class="site-footer">
+        <div class="footer-grid">
+             <div class="footer-about"><h4>Eventify</h4></div>
+             <div class="footer-links"><h4>Quick Links</h4><ul><li><a href="/">Home</a></li><li><a href="/about">About</a></li><li><a href="/events">Event</a></li></ul></div>
+             <div class="footer-links"><h4>Company</h4><ul><li><a href="#">Our approach</a></li><li><a href="#">FAQ Careers</a></li><li><a href="#">Contact</a></li></ul></div>
+             <div class="footer-contact"><h4>Contact Info</h4><ul><li><img src="/icons/location.svg" alt="Location Icon"> Calicut, Kerala</li><li><img src="/icons/phone.svg" alt="Phone Icon"> 111-222-333</li><li><img src="/icons/email.svg" alt="Email Icon"> Eventify@gmail.com</li></ul></div>
+        </div>
+        <div class="footer-copyright"><p>© 2025 All rights reserved by Eventify</p></div>
+    </footer>
+
+</body>
+</html>
